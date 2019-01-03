@@ -10,7 +10,7 @@ while(True):
     print("\n"*100, "Welcome to Tic-Tac Toe! Use your numpad to input the blocks!")
 
 
-    def showboard():       #function prints the board - commend Sandeep for beautification.
+    def showboard():       #function prints the board
         print('\n')
         print('='*13)
         print('|',gameboard['7'],'|',gameboard['8'],'|',gameboard['9'] , '|')
@@ -22,7 +22,7 @@ while(True):
         print('\n')
 
 
-    def win_check(gb,t):    # Lazy brute force coded logic. - blame Pranav.
+    def win_check(gb,t):
         return (
             (gb['7']==t and gb['8']==t and gb['9']==t) or
             (gb['4']==t and gb['5']==t and gb['6']==t) or
